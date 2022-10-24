@@ -4,6 +4,8 @@ TYPE
 		doLamp : ARRAY[1..2] OF BOOL; (* Lampy *)
 		aiTemperature : INT; (* Temperatura *)
 		diPhotoCom : ARRAY[1..2] OF BOOL; (* Fotokomorka *)
+		aiDimmer : ARRAY[1..2] OF INT; (* Obsluga sciemniacza *)
+		aoLamp : ARRAY[1..2] OF INT; (* Obsluga lampy sciemnianej *)
 	END_STRUCT;
 	
 	HouseStruct : STRUCT

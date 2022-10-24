@@ -3,4 +3,7 @@ VAR_CONFIG
 	::Program:Home.Korytarz.doLamp[1] AT %QX."X20DO9322".DigitalOutput09;
 	::Program:Home.Jadalnia.diToogle[2] AT %IX."X20DI9371".DigitalInput03;
 	::Program:Home.Korytarz.diPhotoCom[1] AT %IX."X20DI9371".DigitalInput11;
+	::Program:Home.Jadalnia.aiDimmer[1] AT %IW."X20AI4632".AnalogInput01;
+	::Program:Home.Jadalnia.aoLamp[1] AT %QW."X20AO4632".AnalogOutput04;
+	::Program:Home.Jadalnia.aiDimmer[2] AT %IW."X20AT4222".Temperature04;
 END_VAR

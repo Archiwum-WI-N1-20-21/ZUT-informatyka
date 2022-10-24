@@ -4,17 +4,23 @@
   <OperatingSystem Version="I3.10"/>
   <Hardware Target="SG4"/>
   <Operation Delete="Program.br"/>
+  <Operation Delete="LoopConR.br"/>
   <Operation Delete="asieccon.br"/>
   <Operation Delete="astime.br"/>
+  <Operation Delete="sys_lib.br"/>
+  <Operation Delete="brsystem.br"/>
   <Operation Download="ashwd.br" Memory="SystemROM"/>
   <Operation Download="asfw.br" Memory="SystemROM"/>
   <Operation Download="arconfig.br" Memory="SystemROM"/>
   <Operation Download="sysconf.br" Memory="SystemROM"/>
   <Operation Restart="warm"/>
   <Operation Download="runtime.br" Memory="UserROM"/>
+  <Operation Download="brsystem.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
   <Operation Download="astime.br" Memory="UserROM"/>
   <Operation Download="asieccon.br" Memory="UserROM"/>
   <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="LoopConR.br" Memory="UserROM"/>
   <Operation Download="ashwac.br" Memory="UserROM"/>
   <Operation Download="iomap.br" Memory="UserROM"/>
   <Operation Download="udbdef.br" Memory="UserROM"/>

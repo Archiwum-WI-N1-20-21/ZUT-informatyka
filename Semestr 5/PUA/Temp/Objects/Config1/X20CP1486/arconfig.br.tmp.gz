@@ -125,7 +125,7 @@
     <Parameter ID="ChannelType01" Value="-10V to +10V" />
     <Parameter ID="ChannelType02" Value="-10V to +10V" />
     <Parameter ID="ChannelType03" Value="-10V to +10V" />
-    <Parameter ID="ChannelType04" Value="-10V to +10V" />
+    <Parameter ID="ChannelType04" Value="0 to 20mA" />
   </Module>
   <Module ID="IF6.ST5" Hardware="X20DC1396">
     <Parameter ID="HardwareModuleName" Value="X20DC1396" />
@@ -162,4 +162,4 @@
     <Parameter ID="StatusInfo" Value="on" />
     <Parameter ID="PowerInfo" Value="off" />
   </Module>
-</IOCFG>  
+</IOCFG> 

@@ -15,11 +15,17 @@
     <Cat Name="Library Objects" Img="Libraries.ico">
       <Mod Name="runtime" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
       </Mod>
+      <Mod Name="brsystem" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
+      <Mod Name="sys_lib" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
       <Mod Name="astime" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
       </Mod>
       <Mod Name="asieccon" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
       </Mod>
       <Mod Name="standard" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
+      <Mod Name="LoopConR" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
       </Mod>
     </Cat>
     <Cat Name="Configuration Objects" Img="Configuration.ico">
@@ -31,7 +37,7 @@
       </Mod>
       <Mod Name="sysconf" Img="files\BR.ico" Stat="Equal" Act="Ignore" Res="Warm">
       </Mod>
-      <Mod Name="iomap" Img="files\iom.ico" Stat="Different" Act="Download">
+      <Mod Name="iomap" Img="files\iom.ico" Stat="Equal" Act="Ignore">
       </Mod>
     </Cat>
   </AppMod>

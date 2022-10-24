@@ -172,7 +172,7 @@
     <Channel ID="AnalogOutput01" Description="±10 V / 0 to 20 mA, resolution 16 bit" FromVersion="A2.87" Address="2" Direction="OUT" Type="INT" MSB="16" Sig_Ana_m10V_p10V="1" Sig_Ana_0V_p10V="1" />
     <Channel ID="AnalogOutput02" Description="±10 V / 0 to 20 mA, resolution 16 bit" FromVersion="A2.87" Address="4" Direction="OUT" Type="INT" MSB="16" Sig_Ana_m10V_p10V="1" Sig_Ana_0V_p10V="1" />
     <Channel ID="AnalogOutput03" Description="±10 V / 0 to 20 mA, resolution 16 bit" FromVersion="A2.87" Address="6" Direction="OUT" Type="INT" MSB="16" Sig_Ana_m10V_p10V="1" Sig_Ana_0V_p10V="1" />
-    <Channel ID="AnalogOutput04" Description="±10 V / 0 to 20 mA, resolution 16 bit" FromVersion="A2.87" Address="8" Direction="OUT" Type="INT" MSB="16" Sig_Ana_m10V_p10V="1" Sig_Ana_0V_p10V="1" />
+    <Channel ID="AnalogOutput04" Description="±10 V / 0 to 20 mA, resolution 16 bit" FromVersion="A2.87" Address="8" Direction="OUT" Type="INT" MSB="16" Sig_Ana_0mA_p20mA="1" Sig_Ana_p4mA_p20mA="1" />
     <Channel ID="BusModuleId" Description="Module ID of bus module" FromVersion="A3.08" Ext="/INFO" Address="0x80000180" Direction="IN" Type="UINT" Sig_St_Uint="1" Diagnose="/DIAG" />
     <Channel ID="ModeOfOperation" Description="Status of module" FromVersion="A3.08" Ext="/INFO" Address="0x80000181" Direction="IN" Type="USINT" Sig_St_Usint="1" Diagnose="/DIAG" />
     <Channel ID="ModeOfOperationChangeTime" Description="Time of last change of channel ModeOfOperation" FromVersion="A3.08" Ext="/INFO" Address="0xC0000181" Direction="IN" Type="DATE_AND_TIME" Sig_St_Dt="1" Diagnose="/DIAG" />

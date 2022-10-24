@@ -14,6 +14,18 @@
     UseAsStatic="false"
     Version="" />
   <Library
+    Name="brsystem"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
+    Name="LoopConR"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="4.10.2" />
+  <Library
     Name="operator"
     IsDeployed="false"
     IsStatic="false"
@@ -21,12 +33,18 @@
     Version="" />
   <Library
     Name="runtime"
-    IsDeployed="false"
+    IsDeployed="true"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
   <Library
     Name="standard"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
+    Name="sys_lib"
     IsDeployed="true"
     IsStatic="false"
     UseAsStatic="false"

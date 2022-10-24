@@ -3,6 +3,7 @@ VAR
 	uiLightControl : USINT; (* Tryby pracy oswietlenia 1 : klasyczne sterowanie, 2 : dotyk, 3 : swiatlo pulsujace ze stalym zboczem, 4 : swiatlo pulsujace ze zmiennym zboczem*)
 	ClockTON : ARRAY[1..10] OF TON; 
 	ClockTOF : ARRAY[1..10] OF TOF; 
+	Scale : ARRAY[1..10] OF LCRLimScal;
 END_VAR
 
 VAR RETAIN

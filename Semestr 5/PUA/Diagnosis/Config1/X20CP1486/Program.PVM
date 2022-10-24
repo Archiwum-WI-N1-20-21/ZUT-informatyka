@@ -1,5 +1,5 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=164 Type=100 Scope=60 Force=60 Index=9 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=164 Type=100 Scope=60 Force=60 Index=20 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                                 ClockTON                                TON[0..9]    0 "                                                               *"    0   24   10    0    1    1   a,1,10
                              ClockTON[0]                                      TON    0 "                                                               *"    1   24    1    0    0    1         
@@ -10,13 +10,17 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=164 Type=100 Scope=60 Force=60 I
                                StartTime                                     TIME    0 "                                                           T#0ms"    2   12    1    1    0    0         
                                        M                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                  Restart                                    UDINT    0 "                                                               0"    2    7    1   10    0    0         
-                          uiLightControl                                    USINT    0 "                                                               4"    0    5    1   10    1    0         
+                          uiLightControl                                    USINT    0 "                                                               5"    0    5    1   10    1    0         
                            uiClockTOF_PT                               REAL[0..9]    0 "                                                               *"    0    8   10    0    1    1   a,1,10
-                        uiClockTOF_PT[0]                                     REAL    0 "                                                             1.0"    1    8    1   10    0    0         
+                        uiClockTOF_PT[0]                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                            uiClockTON_PT                               REAL[0..9]    0 "                                                               *"    0    8   10    0    1    1   a,1,10
                         uiClockTON_PT[0]                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                         uiClockTON_PT[1]                                     REAL    0 "                                                             0.0"    1    8    1   10    1    0         
                                     Home                              HouseStruct    0 "                                                               *"    0   24    1    0    1    1         
                                 Jadalnia                               RoomStruct    0 "                                                               *"    1   24    1    0    0    1         
                                   doLamp                               BOOL[0..1]    0 "                                                               *"    2    1    2    0    0    1    a,1,2
-                               doLamp[0]                                     BOOL    3 "                                                           FALSE"    3    1    1    2    0    0         
+                               doLamp[0]                                     BOOL    0 "                                                           FALSE"    3    1    1    2    0    0         
+                                aiDimmer                                INT[0..1]    0 "                                                               *"    2    3    2    0    0    1    a,1,2
+                             aiDimmer[1]                                      INT    0 "                                                               0"    3    3    1   10    0    0         
+                                  aoLamp                                INT[0..1]    0 "                                                               *"    2    3    2    0    0    1    a,1,2
+                               aoLamp[0]                                      INT    3 "                                                           14000"    3    3    1   10    0    0         

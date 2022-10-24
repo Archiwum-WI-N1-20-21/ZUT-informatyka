@@ -407,6 +407,7 @@
 </LN>
 <LN ID="%IW.IF6.ST3.AnalogInput01" Type="INT">
 <Prod Device="IF6.ST3" DPName="AnalogInput01" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.aiDimmer[1]" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST3.Channel01OK" Type="BOOL">
 <Prod Device="IF6.ST3" DPName="Channel01OK" Kind="io"/>
@@ -493,6 +494,7 @@
 <Cons Device="IF6.ST4" DPName="AnalogOutput03" Kind="io"/>
 </LN>
 <LN ID="%QW.IF6.ST4.AnalogOutput04" Type="INT">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.aoLamp[1]" Kind="pv"/>
 <Cons Device="IF6.ST4" DPName="AnalogOutput04" Kind="io"/>
 </LN>
 <LN ID="%IW.IF6.ST4.BusModuleId" Type="UINT">
@@ -626,6 +628,7 @@
 </LN>
 <LN ID="%IW.IF6.ST6.Temperature04" Type="INT">
 <Prod Device="IF6.ST6" DPName="Temperature04" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.aiDimmer[2]" Kind="pv"/>
 </LN>
 <LN ID="%IB.IF6.ST6.StatusInput01" Type="USINT">
 <Prod Device="IF6.ST6" DPName="StatusInput01" Kind="io"/>

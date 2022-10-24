@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _LIBRARIES_20221023124038_
-#define _LIBRARIES_20221023124038_
+#ifndef _LIBRARIES_20221023141849_
+#define _LIBRARIES_20221023141849_
 
 __asm__(".section \".plc\"");
 
@@ -22,6 +22,15 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope 
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.fun\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.typ\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/LoopConR/LoopConR.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/LoopConR/LoopConR.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/LoopConR/LoopConR.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/brsystem/brsystem.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/brsystem/brsystem.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/brsystem/brsystem.var\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 #ifdef _OPERATOR_EXPORT
@@ -486,9 +495,139 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.var\\\" scope 
 	__asm__(".ascii \"plcexport \\\"REPLACE\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"FIND\\\" FUN\\n\"");
 #endif
+#ifdef _LOOPCONR_EXPORT
+	__asm__(".ascii \"plcexport \\\"LCRPID\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRScal\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRCurveByPoints\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPIDpara\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRContinServo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPT1\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRRamp\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRIntegrate\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRLimit\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRLimScal\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPWM\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRMovAvgFlt\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRTimeBasedOnOff\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRDifferentiate\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRSlimPID\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPIDTune\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPFM\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRSimModExt\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRTt\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPT2\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPT1e\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRDblActPID\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRMinMax\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRTempPID\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRTempTune\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRPT2o\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LCRSchedulePWM\\\" FUB\\n\"");
+#endif
+#ifdef _SYS_LIB_EXPORT
+	__asm__(".ascii \"plcexport \\\"Byte2Bit\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"Bit2Byte\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"KEY_read\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"KEY_enadis\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_fix\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_copy\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_store\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_burn\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_delete\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_read\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_write\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_create\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DIS_clr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DIS_chr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DIS_str\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERRxfatal\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERR_read\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERRxread\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERR_fatal\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERR_warning\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERRxwarning\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_release\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_attach\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_delete\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_create\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TIM_ticks\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TIM_musec\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SW_settime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SW_gettime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RTC_settime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RTC_gettime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TMP_free\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TMP_alloc\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MEM_free\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MEM_alloc\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_release\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_attach\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_cancel\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_create\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_sleep\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_exit\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_freemsg\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_recmsg\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_sendmsg\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_resume\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_suspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_name\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_allsuspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_tmp_resume\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_tmp_suspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_resume\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_suspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"FORCE_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MO_ver\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MO_list\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MO_info\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYS_battery\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYSreset\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYSxinfo\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYS_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xlist\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_ninfo\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_item\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_list\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xgetval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xsetval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xgetadr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_getadr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_getval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_setval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"slMoList\\\" FUB\\n\"");
+#endif
+#ifdef _BRSYSTEM_EXPORT
+	__asm__(".ascii \"plcexport \\\"MEMInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"MEMxInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SysInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"RTInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"TARGETInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"HWInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SysconfInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SysconfSet\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"BatteryInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"EXCInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"ZYKVLenable\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"PMemGet\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"PMemPut\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"PMemSize\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"ARwinWindowsInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"ARwinEthWinInfo\\\" FUB\\n\"");
+#endif
 
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20221023124038_ */
+#endif /* _LIBRARIES_20221023141849_ */
 

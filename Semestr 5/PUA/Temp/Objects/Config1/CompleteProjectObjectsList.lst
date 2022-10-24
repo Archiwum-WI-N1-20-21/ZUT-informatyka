@@ -22,7 +22,7 @@
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\Package.pkg"
     LogicalPath="Libraries"
     Type="Package"
-    LastWriteTime="133103978831759492" />
+    LastWriteTime="133109997615528223" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\operator\binary.lby"
     LogicalPath="Libraries.operator"
@@ -139,6 +139,75 @@
     LastWriteTime="133103978831447491"
     Private="false" />
   <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\Binary.lby"
+    LogicalPath="Libraries.LoopConR"
+    Type="Library"
+    LastWriteTime="133109997613928220" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\LoopConR.var"
+    LogicalPath="Libraries.LoopConR.LoopConR.var"
+    Type="File"
+    LastWriteTime="133109997613828220"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\LoopConR.typ"
+    LogicalPath="Libraries.LoopConR.LoopConR.typ"
+    Type="File"
+    LastWriteTime="133109997613928220"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\LoopConR.fun"
+    LogicalPath="Libraries.LoopConR.LoopConR.fun"
+    Type="File"
+    LastWriteTime="133109997613928220"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\binary.lby"
+    LogicalPath="Libraries.sys_lib"
+    Type="Library"
+    LastWriteTime="133109997614628221" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\sys_lib.fun"
+    LogicalPath="Libraries.sys_lib.sys_lib.fun"
+    Type="File"
+    LastWriteTime="133109997614328221"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\sys_lib.typ"
+    LogicalPath="Libraries.sys_lib.sys_lib.typ"
+    Type="File"
+    LastWriteTime="133109997614528221"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\sys_lib.var"
+    LogicalPath="Libraries.sys_lib.sys_lib.var"
+    Type="File"
+    LastWriteTime="133109997614628221"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\binary.lby"
+    LogicalPath="Libraries.brsystem"
+    Type="Library"
+    LastWriteTime="133109997615128222" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\brsystem.fun"
+    LogicalPath="Libraries.brsystem.brsystem.fun"
+    Type="File"
+    LastWriteTime="133109997615128222"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\brsystem.typ"
+    LogicalPath="Libraries.brsystem.brsystem.typ"
+    Type="File"
+    LastWriteTime="133109997615128222"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\brsystem.var"
+    LogicalPath="Libraries.brsystem.brsystem.var"
+    Type="File"
+    LastWriteTime="133109997615128222"
+    Private="false" />
+  <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Package.pkg"
     LogicalPath="Software"
     Type="Package"
@@ -157,19 +226,19 @@
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st"
     LogicalPath="Software.Code.Program.Main.st"
     Type="File"
-    LastWriteTime="133109951552889893"
+    LastWriteTime="133110011254750822"
     Private="false" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ"
     LogicalPath="Software.Code.Program.Types.typ"
     Type="File"
-    LastWriteTime="133109947362448987"
+    LastWriteTime="133110002507104270"
     Private="true" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var"
     LogicalPath="Software.Code.Program.Variables.var"
     Type="File"
-    LastWriteTime="133109948246660225"
+    LastWriteTime="133109998847149948"
     Private="true" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\GUI\Package.pkg"
@@ -190,7 +259,7 @@
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\Hardware.hw"
     LogicalPath="Config1.Hardware.hw"
     Type="File"
-    LastWriteTime="133097941331316654"
+    LastWriteTime="133109966090724492"
     Private="false" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\Hardware.hwl"
@@ -207,7 +276,7 @@
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\X20CP1486\Cpu.sw"
     LogicalPath="Config1.X20CP1486.Cpu.sw"
     Type="File"
-    LastWriteTime="133103978832071492"
+    LastWriteTime="133109997620428230"
     Private="false" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\X20CP1486\Cpu.per"
@@ -219,7 +288,7 @@
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\X20CP1486\IoMap.iom"
     LogicalPath="Config1.X20CP1486.IoMap.iom"
     Type="File"
-    LastWriteTime="133109952354401016"
+    LastWriteTime="133110008730333051"
     Private="false" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\X20CP1486\PvMap.vvm"
