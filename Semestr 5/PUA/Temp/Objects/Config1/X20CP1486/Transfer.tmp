@@ -6,10 +6,6 @@
       <Mod Name="Program" Img="Task.ico" Stat="Different" Act="Download" Vars="Init">
       </Mod>
     </Cat>
-    <Cat Name="Data Objects" Img="SimpleData.ico">
-      <Mod Name="acp10sys" Img="SimpleData.ico" Stat="OnTargetOnly" Act="Ignore">
-      </Mod>
-    </Cat>
     <Cat Name="Binary Objects" Img="Binaries.ico">
       <Mod Name="ashwac" Img="Binary.ico" Stat="Equal" Act="Ignore">
       </Mod>
@@ -35,7 +31,7 @@
       </Mod>
       <Mod Name="sysconf" Img="files\BR.ico" Stat="Equal" Act="Ignore" Res="Warm">
       </Mod>
-      <Mod Name="iomap" Img="files\iom.ico" Stat="Equal" Act="Ignore">
+      <Mod Name="iomap" Img="files\iom.ico" Stat="Different" Act="Download">
       </Mod>
     </Cat>
   </AppMod>

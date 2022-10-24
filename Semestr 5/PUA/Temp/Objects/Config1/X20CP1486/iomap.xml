@@ -210,6 +210,7 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput11" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput11" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Korytarz.diPhotoCom[1]" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput12" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput12" Kind="io"/>
@@ -293,7 +294,7 @@
 <Cons Device="IF6.ST2" DPName="DigitalOutput08" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput09" Type="BOOL">
-<Prod Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.doLamp[1]" Kind="pv"/>
+<Prod Device="TC#4-CPYDEV" DPName="Program:Home.Korytarz.doLamp[1]" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput09" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput10" Type="BOOL">

@@ -152,24 +152,24 @@
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\IEC.prg"
     LogicalPath="Software.Code.Program"
     Type="Program"
-    LastWriteTime="133103959314069192" />
+    LastWriteTime="133109937998143790" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st"
     LogicalPath="Software.Code.Program.Main.st"
     Type="File"
-    LastWriteTime="133103986260924547"
+    LastWriteTime="133109951552889893"
     Private="false" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ"
     LogicalPath="Software.Code.Program.Types.typ"
     Type="File"
-    LastWriteTime="133103967321693264"
+    LastWriteTime="133109947362448987"
     Private="true" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var"
     LogicalPath="Software.Code.Program.Variables.var"
     Type="File"
-    LastWriteTime="133103983588599851"
+    LastWriteTime="133109948246660225"
     Private="true" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\GUI\Package.pkg"
@@ -219,7 +219,7 @@
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\X20CP1486\IoMap.iom"
     LogicalPath="Config1.X20CP1486.IoMap.iom"
     Type="File"
-    LastWriteTime="133103982924964685"
+    LastWriteTime="133109952354401016"
     Private="false" />
   <Object
     Path="C:\projects\PUA_Lab1_Baranek\Physical\Config1\X20CP1486\PvMap.vvm"
