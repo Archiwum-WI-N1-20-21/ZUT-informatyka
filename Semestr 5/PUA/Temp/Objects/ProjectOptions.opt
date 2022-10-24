@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.9.2.46"?>
+<ProjectOptions
+  IecNamingConventions="true"
+  IecKeywordsAsStructureMembers="false"
+  IecExtendedConstants="true"
+  LogicalDirectory="C:\projects\PUA_Lab1_Baranek\Logical\"
+  TempDirectory="C:\projects\PUA_Lab1_Baranek\Temp\"
+  AutomationStudioVersion="4.9.2.46"
+  AutomationStudioEdition="Standard"
+  BuildCrossReference="false"
+  ActiveConfiguration="Config1"
+  CreateAnsiCDeclarations="false" />

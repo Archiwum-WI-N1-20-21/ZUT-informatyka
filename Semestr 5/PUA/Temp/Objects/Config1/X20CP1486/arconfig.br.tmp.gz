@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="X20CP1486">
+    <Parameter ID="HardwareModuleName" Value="X20CP1486" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+  </Module>
+  <Module ID="$root.IO" Hardware="X20CP1486">
+    <Parameter ID="ActivateOpc" Value="0" />
+    <Parameter ID="OpcServerName" Value="BR.OPC.Server_AR" />
+  </Module>
+  <Module ID="IF3" Hardware="X20CP1486">
+    <Parameter ID="Operation" Value="EPL-V2" />
+    <Parameter ID="MtuSize" Value="300" Type="UDINT" />
+  </Module>
+  <Module ID="IF3.PLK" Hardware="EPL-V2">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="MuxPrescaler" Value="8" Type="UDINT" />
+    <Parameter ID="Mode" Value="MN" />
+    <Parameter ID="NodeID" Value="240" Type="DINT" />
+    <Parameter ID="AsyncTimeout" Value="25" Type="UDINT" />
+    <Parameter ID="TransferOnlyActive" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="off" />
+    <Parameter ID="EplNatSubnet" Value="192.168.101.0" />
+    <Parameter ID="ApplSwDate" Value="0" Type="UDINT" />
+    <Parameter ID="ApplSwTime" Value="0" Type="UDINT" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF6.X2X" Hardware="X2X">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="BusLength" Value="1000" Type="UDINT" />
+    <Parameter ID="Stations" Value="64" Type="UDINT" />
+    <Parameter ID="AsyncPayload" Value="80" Type="UDINT" />
+    <Parameter ID="Asymmetric" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="on" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF6.ST1" Hardware="X20DI9371">
+    <Parameter ID="HardwareModuleName" Value="X20DI9371" />
+  </Module>
+  <Module ID="IF6.ST1.IO" Hardware="X20DI9371">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="DigitalInputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST2" Hardware="X20DO9322">
+    <Parameter ID="HardwareModuleName" Value="X20DO9322" />
+  </Module>
+  <Module ID="IF6.ST2.IO" Hardware="X20DO9322">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="DigitalOutputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST3" Hardware="X20AI4632">
+    <Parameter ID="HardwareModuleName" Value="X20AI4632" />
+  </Module>
+  <Module ID="IF6.ST3.IO" Hardware="X20AI4632">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="ChStatusInfo" Value="on" />
+    <Parameter ID="ExtChStatusInfo" Value="off" />
+    <Parameter ID="SampleTime" Value="100" Type="UINT" />
+    <Parameter ID="TraceEnable" Value="off" />
+    <Parameter ID="Channel01enable" Value="on" />
+    <Parameter ID="ChannelType01" Value="-10V to +10V" />
+    <Parameter ID="ChannelErrCheck01" Value="on" />
+    <Parameter ID="MinMaxCheck01" Value="off" />
+    <Parameter ID="MinLimit01" Value="-32768" Type="INT" />
+    <Parameter ID="MaxLimit01" Value="32767" Type="INT" />
+    <Parameter ID="UserGain01" Value="65536" Type="DINT" />
+    <Parameter ID="Useroffset01" Value="0" Type="DINT" />
+    <Parameter ID="ChannelFilter01" Value="on" />
+    <Parameter ID="FilterOrder01" Value="1" Type="USINT" />
+    <Parameter ID="FilterConstant01" Value="500" Type="UINT" />
+    <Parameter ID="Channel02enable" Value="on" />
+    <Parameter ID="ChannelType02" Value="-10V to +10V" />
+    <Parameter ID="ChannelErrCheck02" Value="on" />
+    <Parameter ID="MinMaxCheck02" Value="off" />
+    <Parameter ID="MinLimit02" Value="-32768" Type="INT" />
+    <Parameter ID="MaxLimit02" Value="32767" Type="INT" />
+    <Parameter ID="UserGain02" Value="65536" Type="DINT" />
+    <Parameter ID="Useroffset02" Value="0" Type="DINT" />
+    <Parameter ID="ChannelFilter02" Value="on" />
+    <Parameter ID="FilterOrder02" Value="1" Type="USINT" />
+    <Parameter ID="FilterConstant02" Value="500" Type="UINT" />
+    <Parameter ID="Channel03enable" Value="on" />
+    <Parameter ID="ChannelType03" Value="-10V to +10V" />
+    <Parameter ID="ChannelErrCheck03" Value="on" />
+    <Parameter ID="MinMaxCheck03" Value="off" />
+    <Parameter ID="MinLimit03" Value="-32768" Type="INT" />
+    <Parameter ID="MaxLimit03" Value="32767" Type="INT" />
+    <Parameter ID="UserGain03" Value="65536" Type="DINT" />
+    <Parameter ID="Useroffset03" Value="0" Type="DINT" />
+    <Parameter ID="ChannelFilter03" Value="on" />
+    <Parameter ID="FilterOrder03" Value="1" Type="USINT" />
+    <Parameter ID="FilterConstant03" Value="500" Type="UINT" />
+    <Parameter ID="Channel04enable" Value="on" />
+    <Parameter ID="ChannelType04" Value="-10V to +10V" />
+    <Parameter ID="ChannelErrCheck04" Value="on" />
+    <Parameter ID="MinMaxCheck04" Value="off" />
+    <Parameter ID="MinLimit04" Value="-32768" Type="INT" />
+    <Parameter ID="MaxLimit04" Value="32767" Type="INT" />
+    <Parameter ID="UserGain04" Value="65536" Type="DINT" />
+    <Parameter ID="Useroffset04" Value="0" Type="DINT" />
+    <Parameter ID="ChannelFilter04" Value="on" />
+    <Parameter ID="FilterOrder04" Value="1" Type="USINT" />
+    <Parameter ID="FilterConstant04" Value="500" Type="UINT" />
+  </Module>
+  <Module ID="IF6.ST4" Hardware="X20AO4632">
+    <Parameter ID="HardwareModuleName" Value="X20AO4632" />
+  </Module>
+  <Module ID="IF6.ST4.IO" Hardware="X20AO4632">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="ChannelType01" Value="-10V to +10V" />
+    <Parameter ID="ChannelType02" Value="-10V to +10V" />
+    <Parameter ID="ChannelType03" Value="-10V to +10V" />
+    <Parameter ID="ChannelType04" Value="-10V to +10V" />
+  </Module>
+  <Module ID="IF6.ST5" Hardware="X20DC1396">
+    <Parameter ID="HardwareModuleName" Value="X20DC1396" />
+  </Module>
+  <Module ID="IF6.ST5.IO" Hardware="X20DC1396">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="RefpulsEdge01" Value="RnegEdge" />
+    <Parameter ID="HomingInput01" Value="off" />
+    <Parameter ID="PresetABR01" Value="0" Type="INT" />
+  </Module>
+  <Module ID="IF6.ST6" Hardware="X20AT4222">
+    <Parameter ID="HardwareModuleName" Value="X20AT4222" />
+  </Module>
+  <Module ID="IF6.ST6.IO" Hardware="X20AT4222">
+    <Parameter ID="FunctionModel" Value="FunctionModel001" />
+    <Parameter ID="FunctionModelNumber" Value="1" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="IOCycleCounter" Value="off" />
+    <Parameter ID="InputFilter" Value="20ms" />
+    <Parameter ID="SensorType01" Value="PT1000" />
+    <Parameter ID="SensorType02" Value="off" />
+    <Parameter ID="SensorType03" Value="off" />
+    <Parameter ID="SensorType04" Value="PT1000" />
+  </Module>
+  <Module ID="IF6.ST7" Hardware="X20BT9100">
+    <Parameter ID="HardwareModuleName" Value="X20BT9100" />
+  </Module>
+  <Module ID="IF6.ST7.IO" Hardware="X20BT9100">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="PowerInfo" Value="off" />
+  </Module>
+</IOCFG>  

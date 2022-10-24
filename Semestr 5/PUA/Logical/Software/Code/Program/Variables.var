@@ -1,0 +1,9 @@
+VAR
+	Home : HouseStruct;
+	uiLightControl : USINT; (* Tryby pracy oswietlenia 1 : klasyczne sterowanie, 2 : dotyk, 3 : swiatlo pulsujace ze stalym zboczem, 4 : swiatlo pulsujace ze zmiennym zboczem*)
+	ClockTON : ARRAY[1..10] OF TON; 
+END_VAR
+
+VAR RETAIN
+	uiClockTON_PT : ARRAY[1..10] OF REAL; (* Czas zadany w sekundach *)
+END_VAR

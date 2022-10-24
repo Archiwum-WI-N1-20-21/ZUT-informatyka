@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <AppMod Name="&lt;Default&gt;" Img="AppModule.ico">
+    <Cat Name="Cyclic #4" Img="Cyclic.ico">
+      <Mod Name="Program" Img="Task.ico" Stat="Different" Act="Download" Vars="Init">
+      </Mod>
+    </Cat>
+    <Cat Name="Data Objects" Img="SimpleData.ico">
+      <Mod Name="acp10sys" Img="SimpleData.ico" Stat="OnTargetOnly" Act="Ignore">
+      </Mod>
+    </Cat>
+    <Cat Name="Binary Objects" Img="Binaries.ico">
+      <Mod Name="ashwac" Img="Binary.ico" Stat="Equal" Act="Ignore">
+      </Mod>
+      <Mod Name="udbdef" Img="Binary.ico" Stat="Equal" Act="Ignore">
+      </Mod>
+    </Cat>
+    <Cat Name="Library Objects" Img="Libraries.ico">
+      <Mod Name="runtime" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
+      <Mod Name="astime" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
+      <Mod Name="asieccon" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
+      <Mod Name="standard" Img="files\IEC.lby.ico" Stat="Equal" Act="Ignore" Chng="TRUE">
+      </Mod>
+    </Cat>
+    <Cat Name="Configuration Objects" Img="Configuration.ico">
+      <Mod Name="ashwd" Img="files\BR.ico" Stat="Equal" Act="Ignore" Res="Warm">
+      </Mod>
+      <Mod Name="asfw" Img="files\BR.ico" Stat="Equal" Act="Ignore" Res="Warm">
+      </Mod>
+      <Mod Name="arconfig" Img="files\rtc.ico" Stat="Equal" Act="Ignore" Res="Warm">
+      </Mod>
+      <Mod Name="sysconf" Img="files\BR.ico" Stat="Equal" Act="Ignore" Res="Warm">
+      </Mod>
+      <Mod Name="iomap" Img="files\iom.ico" Stat="Equal" Act="Ignore">
+      </Mod>
+    </Cat>
+  </AppMod>
+</Transfer>

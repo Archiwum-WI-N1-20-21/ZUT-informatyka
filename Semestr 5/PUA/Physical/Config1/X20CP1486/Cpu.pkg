@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
+    <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
+  </Objects>
+  <Configuration ModuleId="X20CP1486">
+    <AutomationRuntime Version="I3.10" />
+    <Build GccVersion="4.1.2" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Vc FirmwareVersion="V4.72.2" />
+    <OnlineConfiguration Name="NewTCPIPConnection" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=31.193.99.172 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
+  </Configuration>
+</Cpu>

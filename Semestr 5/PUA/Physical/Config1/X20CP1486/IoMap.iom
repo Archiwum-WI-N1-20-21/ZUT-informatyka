@@ -1,0 +1,5 @@
+VAR_CONFIG
+	::Program:Home.Jadalnia.diToogle[1] AT %IX."X20DI9371".DigitalInput02;
+	::Program:Home.Jadalnia.doLamp[1] AT %QX."X20DO9322".DigitalOutput09;
+	::Program:Home.Jadalnia.diToogle[2] AT %IX."X20DI9371".DigitalInput03;
+END_VAR
