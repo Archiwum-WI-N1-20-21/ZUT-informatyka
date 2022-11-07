@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.9.2.46"?>
+<Objects>
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package.ParentUnknown"
+    LastWriteTime="133103957324255695" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="133097934578422787"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="133097934578578787"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="133109997615528223" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\operator\binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="133097934588562805" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="133097934588562805"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="133097934588562805"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="133097934588562805"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\runtime\binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="133097934592930813" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="133097934592774812"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="133097934592774812"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="133097934592930813"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\astime\binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="133097934597454821" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="133097934597298820"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="133097934597454821"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="133097934597454821"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\AsIecCon\binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="133097934602134829" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="133097934602134829"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="133097934602134829"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="133097934602134829"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\standard\binary.lby"
+    LogicalPath="Libraries.standard"
+    Type="Library"
+    LastWriteTime="133103978831447491" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\standard\standard.fun"
+    LogicalPath="Libraries.standard.standard.fun"
+    Type="File"
+    LastWriteTime="133103978831447491"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\standard\standard.typ"
+    LogicalPath="Libraries.standard.standard.typ"
+    Type="File"
+    LastWriteTime="133103978831447491"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\standard\standard.var"
+    LogicalPath="Libraries.standard.standard.var"
+    Type="File"
+    LastWriteTime="133103978831447491"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\Binary.lby"
+    LogicalPath="Libraries.LoopConR"
+    Type="Library"
+    LastWriteTime="133109997613928220" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\LoopConR.var"
+    LogicalPath="Libraries.LoopConR.LoopConR.var"
+    Type="File"
+    LastWriteTime="133109997613828220"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\LoopConR.typ"
+    LogicalPath="Libraries.LoopConR.LoopConR.typ"
+    Type="File"
+    LastWriteTime="133109997613928220"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\LoopConR\LoopConR.fun"
+    LogicalPath="Libraries.LoopConR.LoopConR.fun"
+    Type="File"
+    LastWriteTime="133109997613928220"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\binary.lby"
+    LogicalPath="Libraries.sys_lib"
+    Type="Library"
+    LastWriteTime="133109997614628221" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\sys_lib.fun"
+    LogicalPath="Libraries.sys_lib.sys_lib.fun"
+    Type="File"
+    LastWriteTime="133109997614328221"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\sys_lib.typ"
+    LogicalPath="Libraries.sys_lib.sys_lib.typ"
+    Type="File"
+    LastWriteTime="133109997614528221"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\sys_lib\sys_lib.var"
+    LogicalPath="Libraries.sys_lib.sys_lib.var"
+    Type="File"
+    LastWriteTime="133109997614628221"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\binary.lby"
+    LogicalPath="Libraries.brsystem"
+    Type="Library"
+    LastWriteTime="133109997615128222" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\brsystem.fun"
+    LogicalPath="Libraries.brsystem.brsystem.fun"
+    Type="File"
+    LastWriteTime="133109997615128222"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\brsystem.typ"
+    LogicalPath="Libraries.brsystem.brsystem.typ"
+    Type="File"
+    LastWriteTime="133109997615128222"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Libraries\brsystem\brsystem.var"
+    LogicalPath="Libraries.brsystem.brsystem.var"
+    Type="File"
+    LastWriteTime="133109997615128222"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Package.pkg"
+    LogicalPath="Software"
+    Type="Package"
+    LastWriteTime="133103957618628212" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Package.pkg"
+    LogicalPath="Software.Code"
+    Type="Package"
+    LastWriteTime="133103959314069192" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\IEC.prg"
+    LogicalPath="Software.Code.Program"
+    Type="Program"
+    LastWriteTime="133109937998143790" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st"
+    LogicalPath="Software.Code.Program.Main.st"
+    Type="File"
+    LastWriteTime="133122063360287042"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ"
+    LogicalPath="Software.Code.Program.Types.typ"
+    Type="File"
+    LastWriteTime="133122056527204334"
+    Private="true" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var"
+    LogicalPath="Software.Code.Program.Variables.var"
+    Type="File"
+    LastWriteTime="133109998847149948"
+    Private="true" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\GUI\Package.pkg"
+    LogicalPath="Software.GUI"
+    Type="Package"
+    LastWriteTime="133122079885037667" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\GUI\GUI_Test\Vc.dob"
+    LogicalPath="Software.GUI.GUI_Test"
+    Type="DataObject"
+    LastWriteTime="133122079884807654" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\GUI\GUI_Test\VCObject.vc"
+    LogicalPath="Software.GUI.GUI_Test.VCObject.vc"
+    Type="File"
+    LastWriteTime="133122079884807654"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Logical\Software\Docs\Package.pkg"
+    LogicalPath="Software.Docs"
+    Type="Package"
+    LastWriteTime="133103957521908043" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\Config.pkg"
+    LogicalPath="SIM_Config"
+    Type="Configuration.ParentUnknown"
+    LastWriteTime="133122067735582840" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\Hardware.hw"
+    LogicalPath="SIM_Config.Hardware.hw"
+    Type="File"
+    LastWriteTime="133122085389392498"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\Hardware.hwl"
+    LogicalPath="SIM_Config.Hardware.hwl"
+    Type="File"
+    LastWriteTime="133122069254357664"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\Cpu.pkg"
+    LogicalPath="SIM_Config.X20CP1586"
+    Type="Cpu"
+    LastWriteTime="133122085386182314" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\Cpu.sw"
+    LogicalPath="SIM_Config.X20CP1586.Cpu.sw"
+    Type="File"
+    LastWriteTime="133122079886437747"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\Cpu.per"
+    LogicalPath="SIM_Config.X20CP1586.Cpu.per"
+    Type="File"
+    LastWriteTime="133122067727506819"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\IoMap.iom"
+    LogicalPath="SIM_Config.X20CP1586.IoMap.iom"
+    Type="File"
+    LastWriteTime="133122067727506819"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\PvMap.vvm"
+    LogicalPath="SIM_Config.X20CP1586.PvMap.vvm"
+    Type="File"
+    LastWriteTime="133122067727506819"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\Connectivity\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.Connectivity"
+    Type="Package"
+    LastWriteTime="133122067727506819" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\Connectivity\OpcUA\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.Connectivity.OpcUA"
+    Type="Package"
+    LastWriteTime="133122067727506819" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\TextSystem\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.TextSystem"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\UnitSystem\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.UnitSystem"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.UserRoleSystem"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\UserRoleSystem\Role.role"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.UserRoleSystem.Role.role"
+    Type="File"
+    LastWriteTime="133122067727662820"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\UserRoleSystem\User.user"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.UserRoleSystem.User.user"
+    Type="File"
+    LastWriteTime="133122067727662820"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.OwnCertificates"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
+    Type="Package"
+    LastWriteTime="133122067727662820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.TransportLayerSecurity"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\Firewall\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.Firewall"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\AccessAndSecurity\Firewall\Rules.firewallRules"
+    LogicalPath="SIM_Config.X20CP1586.AccessAndSecurity.Firewall.Rules.firewallRules"
+    Type="File"
+    LastWriteTime="133122067727818820"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappControl\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappControl"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappMotion\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappMotion"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappServices\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappServices"
+    Type="Package"
+    LastWriteTime="133122067727818820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappSafety\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappSafety"
+    Type="Package"
+    LastWriteTime="133122067727974820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappSafety\SafeApplication\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappSafety.SafeApplication"
+    Type="Package"
+    LastWriteTime="133122067727974820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappSafety\SafeCommissioning\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappSafety.SafeCommissioning"
+    Type="Package"
+    LastWriteTime="133122067727974820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappView\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappView"
+    Type="Package"
+    LastWriteTime="133122067728130820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappVision\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappVision"
+    Type="Package"
+    LastWriteTime="133122067728130820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\mappCockpit\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.mappCockpit"
+    Type="Package"
+    LastWriteTime="133122067728130820" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\VC\Package.pkg"
+    LogicalPath="SIM_Config.X20CP1586.VC"
+    Type="Package"
+    LastWriteTime="133122085388102424" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\X20CP1586\VC\PS2-Keyboard.dis"
+    LogicalPath="SIM_Config.X20CP1586.VC.PS2-Keyboard.dis"
+    Type="File"
+    LastWriteTime="133122085389252490"
+    Private="false" />
+  <Object
+    Path="C:\projects\PUA_Lab1_Baranek\Physical\SIM_Config\Hardware.jpg"
+    LogicalPath="SIM_Config.Hardware.jpg"
+    Type="File"
+    LastWriteTime="133122069255037703"
+    Private="false" />
+</Objects>

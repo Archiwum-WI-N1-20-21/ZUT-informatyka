@@ -21,7 +21,7 @@
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\arconfig.br">
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-10-23 11:03:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\iomap.iom" LastWriteTime="2022-10-23 12:14:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\iomap.iom" LastWriteTime="2022-11-06 11:01:52" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1486\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=31.193.99.172 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;X20CP1486&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B I3.10 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\udbdef.br">
@@ -29,21 +29,21 @@
     <CommandLine Parameter="C:\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\udbdef.br" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\iomap.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\iomap.iom" LastWriteTime="2022-10-23 12:14:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\iomap.iom" LastWriteTime="2022-11-06 11:01:52" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\pvmap.vvm" LastWriteTime="2022-10-09 12:51:00" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-10-23 11:03:28" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\cpu.sw" LastWriteTime="2022-10-23 11:56:02" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\channelconfiguration.xml" LastWriteTime="2022-10-23 11:05:02" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-10-23 12:04:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-11-06 10:54:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1486\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1486\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\iomap.br&quot; -T SG4 -B I3.10 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.X20CP1486&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\program.ox" LastWriteTime="2022-10-23 12:18:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\program.ox" LastWriteTime="2022-11-06 11:05:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1486\cpu.per" LastWriteTime="2022-10-09 12:51:00" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\loopconr\loopconr.fun" LastWriteTime="2022-10-23 11:56:00" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2022-10-16 12:44:42" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\variables.var" LastWriteTime="2022-10-23 11:58:04" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-10-23 12:04:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-11-06 10:54:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program\Program.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\X20CP1486\LT.ofs&quot; -T SG4 -M IA32 -B I3.10 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic4 -p 2 -s &quot;Software.Code.Program&quot; -L &quot;AsIecCon: V*, astime: V*, brsystem: V*, LoopConR: V4.10.2, operator: V*, runtime: V*, standard: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
     <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
     <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
@@ -51,27 +51,27 @@
     <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\program.ox">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\a.out" LastWriteTime="2022-10-23 12:18:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\a.out" LastWriteTime="2022-11-06 11:05:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\loopconr\loopconr.fun" LastWriteTime="2022-10-23 11:56:00" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2022-10-16 12:44:42" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\variables.var" LastWriteTime="2022-10-23 11:58:04" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-10-23 12:04:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-11-06 10:54:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program\Program.ox&quot; -T SG4 -r Cyclic4 -G V4.1.2  " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\a.out">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\main.st.o" LastWriteTime="2022-10-23 12:18:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\main.st.o" LastWriteTime="2022-11-06 11:05:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\loopconr\loopconr.fun" LastWriteTime="2022-10-23 11:56:00" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2022-10-16 12:44:42" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\variables.var" LastWriteTime="2022-10-23 11:58:04" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-10-23 12:04:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-11-06 10:54:12" />
     <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program\Main.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\LoopConR\SG4\libLoopConR.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\libbrsystem.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\I0310\SG4\liboperator.a&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs&quot; -nostdlib &quot;-Wl,C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\lib\libasiec.a&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program\main.st.o">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\main.st" LastWriteTime="2022-10-23 12:18:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\main.st" LastWriteTime="2022-11-06 11:05:36" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\loopconr\loopconr.fun" LastWriteTime="2022-10-23 11:56:00" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2022-10-16 12:44:42" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\variables.var" LastWriteTime="2022-10-23 11:58:04" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-10-23 12:04:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\software\code\program\types.typ" LastWriteTime="2022-11-06 10:54:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Software\Code\Program\Main.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1486\Program\Main.st.o&quot; -T SG4 -M IA32 -B I3.10 -G V4.1.2  -s &quot;Software.Code.Program&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Software\Code\Program\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Software\Code\Program\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\LoopConR\LoopConR.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\LoopConR\LoopConR.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\LoopConR\LoopConR.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
     <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
   </Rule>
@@ -105,8 +105,8 @@
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\ashwd.br" LastWriteTime="2022-10-09 13:09:20" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\arconfig.br" LastWriteTime="2022-10-23 11:05:02" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\iomap.br" LastWriteTime="2022-10-23 12:15:40" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program.br" LastWriteTime="2022-10-23 12:18:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\iomap.br" LastWriteTime="2022-11-06 11:01:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\program.br" LastWriteTime="2022-11-06 11:05:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\standard.br" LastWriteTime="2020-09-30 15:04:34" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\loopconr.br" LastWriteTime="2020-10-19 07:57:44" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1486\sys_lib.br" LastWriteTime="2020-09-30 15:04:36" />

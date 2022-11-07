@@ -1,6 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
+  <TreeView ID="X20DC1396-Config1-X20CP1486" EditColumn="7" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+    <Columns>
+      <Column Index="0" Width="0" Position="0" />
+      <Column Index="1" Width="0" Position="1" />
+      <Column Index="2" Width="0" Position="2" />
+      <Column Index="3" Width="152" Position="3" />
+      <Column Index="4" Width="0" Position="4" />
+      <Column Index="5" Width="0" Position="5" />
+      <Column Index="6" Width="0" Position="6" />
+      <Column Index="7" Width="325" Position="7" />
+      <Column Index="8" Width="0" Position="8" />
+      <Column Index="9" Width="108" Position="9" />
+      <Column Index="10" Width="114" Position="10" />
+      <Column Index="11" Width="78" Position="11" />
+      <Column Index="12" Width="92" Position="12" />
+      <Column Index="13" Width="118" Position="13" />
+      <Column Index="14" Width="146" Position="14" />
+      <Column Index="15" Width="0" Position="15" />
+      <Column Index="16" Width="0" Position="16" />
+    </Columns>
+    <ExpandedNodes />
+    <SelectedNodes>
+      <SelectedNode Row="0" />
+    </SelectedNodes>
+    <ZoomIndices />
+  </TreeView>
   <TreeView ID="X20DI9371-Config1-X20CP1486" EditColumn="7" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
     <Columns>
       <Column Index="0" Width="0" Position="0" />
@@ -23,7 +49,7 @@
     </Columns>
     <ExpandedNodes />
     <SelectedNodes>
-      <SelectedNode Row="9" />
+      <SelectedNode Row="0" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
@@ -49,17 +75,17 @@
     </Columns>
     <ExpandedNodes />
     <SelectedNodes>
-      <SelectedNode Row="15" />
+      <SelectedNode Row="0" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
-  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st" CaretLine="23" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var" CaretLine="6" CaretColumn="21" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ" CaretLine="4" CaretColumn="5" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ" CaretLine="14" CaretColumn="17" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var" CaretLine="8" CaretColumn="17" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st" CaretLine="56" CaretColumn="72" FirstVisibleLine="27">
     <Bookmarks />
   </TextEdit>
 </State>

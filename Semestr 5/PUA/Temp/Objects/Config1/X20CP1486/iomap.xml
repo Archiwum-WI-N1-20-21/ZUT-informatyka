@@ -189,9 +189,11 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput04" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput04" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Schody.diParter" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput05" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput05" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Schody.diPietro" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput06" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput06" Kind="io"/>
@@ -291,6 +293,7 @@
 <Cons Device="IF6.ST2" DPName="DigitalOutput07" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput08" Type="BOOL">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Home.Schody.doLamp" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput08" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput09" Type="BOOL">

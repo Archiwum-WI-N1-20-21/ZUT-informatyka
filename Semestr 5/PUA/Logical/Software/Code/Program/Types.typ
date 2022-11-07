@@ -8,11 +8,18 @@ TYPE
 		aoLamp : ARRAY[1..2] OF INT; (* Obsluga lampy sciemnianej *)
 	END_STRUCT;
 	
+	StairsStruct : STRUCT
+		diParter : BOOL;
+		diPietro : BOOL;
+		doLamp : BOOL;
+	END_STRUCT;
+	
 	HouseStruct : STRUCT
 		Jadalnia : RoomStruct;
 		Kuchnia : RoomStruct;
 		Sypialnia : RoomStruct;
 		Korytarz : RoomStruct;
+		Schody : StairsStruct;
 	END_STRUCT;
 	
 END_TYPE

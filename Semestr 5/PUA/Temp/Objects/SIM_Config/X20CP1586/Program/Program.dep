@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/LoopConR/LoopConR.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/Software/Code/Program/Variables.var
+$(AS_PROJECT_PATH)/Logical/Software/Code/Program/Types.typ

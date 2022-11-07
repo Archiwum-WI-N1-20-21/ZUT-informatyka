@@ -1,7 +1,7 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	uiLightControl := 5;
+	uiLightControl := 6;
 	//uiClockTON_PT[1] := 1;
 END_PROGRAM
 
@@ -49,7 +49,16 @@ PROGRAM _CYCLIC
 			Scale[2].x2 := 350;
 			Scale[2].y2 := 28000;
 			Scale[2]();
-			Home.Jadalnia.aoLamp[1] := REAL_TO_INT(Scale[2].y);		
+			Home.Jadalnia.aoLamp[1] := REAL_TO_INT(Scale[2].y);	
+		
+		6: // Schodowy
+			//Home.Schody.doLamp := Home.Schody.diParter AND NOT (Home.Schody.diPietro) OR NOT (Home.Schody.diParter) AND Home.Schody.diPietro;
+			Home.Schody.doLamp := Home.Schody.diParter XOR Home.Schody.diPietro;
+			IF Home.Schody.doLamp THEN
+				Home.Jadalnia.aoLamp[1] := 20000;
+			ELSE
+				Home.Jadalnia.aoLamp[1] := 0;
+			END_IF
 	END_CASE;
 END_PROGRAM
 
