@@ -3,13 +3,13 @@
 <LibraryInfos>
   <Library
     Name="AsIecCon"
-    IsDeployed="true"
+    IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
   <Library
     Name="astime"
-    IsDeployed="true"
+    IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
@@ -27,7 +27,7 @@
     Version="4.10.2" />
   <Library
     Name="operator"
-    IsDeployed="true"
+    IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />

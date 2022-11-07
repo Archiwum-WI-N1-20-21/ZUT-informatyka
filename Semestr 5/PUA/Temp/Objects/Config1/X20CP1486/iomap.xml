@@ -181,19 +181,18 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput02" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput02" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.diToogle[1]" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Opearator.diStart" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput03" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput03" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.diToogle[2]" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Opearator.diStop" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput04" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput04" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Schody.diParter" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Opearator.diReset" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput05" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput05" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Schody.diPietro" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput06" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput06" Kind="io"/>
@@ -212,10 +211,11 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput11" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput11" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Korytarz.diPhotoCom[1]" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Engine.diTermikNO" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput12" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput12" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Engine.diTermikNC" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF6.ST1.BusModuleId" Type="UINT">
 <Prod Device="IF6.ST1" DPName="BusModuleId" Kind="io"/>
@@ -272,9 +272,11 @@
 <Prod Device="IF6.ST2" DPName="FirmwareVersion" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput01" Type="BOOL">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Opearator.doAktywny" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput02" Type="BOOL">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Opearator.doAwaria" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput02" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput03" Type="BOOL">

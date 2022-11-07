@@ -1,3 +1,9 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=0 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=5 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
+                               Opearator                           OperatorStruct    0 "                                                               *"    0   24    1    0    1    1         
+                                 diStart                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                  diStop                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                               doAktywny                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                doAwaria                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                 diReset                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         

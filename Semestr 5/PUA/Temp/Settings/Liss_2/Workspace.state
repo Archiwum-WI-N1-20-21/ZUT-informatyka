@@ -79,13 +79,13 @@
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
-  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var" CaretLine="6" CaretColumn="21" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st" CaretLine="65" CaretColumn="95" FirstVisibleLine="35">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ" CaretLine="14" CaretColumn="17" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Types.typ" CaretLine="34" CaretColumn="106" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Main.st" CaretLine="56" CaretColumn="72" FirstVisibleLine="27">
+  <TextEdit ID="C:\projects\PUA_Lab1_Baranek\Logical\Software\Code\Program\Variables.var" CaretLine="7" CaretColumn="8" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
 </State>

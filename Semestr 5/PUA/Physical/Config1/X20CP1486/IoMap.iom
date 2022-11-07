@@ -1,12 +1,14 @@
 VAR_CONFIG
-	::Program:Home.Jadalnia.diToogle[1] AT %IX."X20DI9371".DigitalInput02;
 	::Program:Home.Korytarz.doLamp[1] AT %QX."X20DO9322".DigitalOutput09;
-	::Program:Home.Jadalnia.diToogle[2] AT %IX."X20DI9371".DigitalInput03;
-	::Program:Home.Korytarz.diPhotoCom[1] AT %IX."X20DI9371".DigitalInput11;
 	::Program:Home.Jadalnia.aiDimmer[1] AT %IW."X20AI4632".AnalogInput01;
 	::Program:Home.Jadalnia.aoLamp[1] AT %QW."X20AO4632".AnalogOutput04;
 	::Program:Home.Jadalnia.aiDimmer[2] AT %IW."X20AT4222".Temperature04;
-	::Program:Home.Schody.diParter AT %IX."X20DI9371".DigitalInput04;
-	::Program:Home.Schody.diPietro AT %IX."X20DI9371".DigitalInput05;
 	::Program:Home.Schody.doLamp AT %QX."X20DO9322".DigitalOutput08;
+	::Program:Opearator.diStart AT %IX."X20DI9371".DigitalInput02;
+	::Program:Opearator.diStop AT %IX."X20DI9371".DigitalInput03;
+	::Program:Opearator.diReset AT %IX."X20DI9371".DigitalInput04;
+	::Program:Opearator.doAktywny AT %QX."X20DO9322".DigitalOutput01;
+	::Program:Opearator.doAwaria AT %QX."X20DO9322".DigitalOutput02;
+	::Program:Engine.diTermikNO AT %IX."X20DI9371".DigitalInput11;
+	::Program:Engine.diTermikNC AT %IX."X20DI9371".DigitalInput12;
 END_VAR

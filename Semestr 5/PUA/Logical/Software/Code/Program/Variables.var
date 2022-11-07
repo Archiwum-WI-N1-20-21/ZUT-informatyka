@@ -4,6 +4,8 @@ VAR
 	ClockTON : ARRAY[1..10] OF TON; 
 	ClockTOF : ARRAY[1..10] OF TOF; 
 	Scale : ARRAY[1..10] OF LCRLimScal;
+	Opearator : OperatorStruct;
+	Engine : EngineStruct;
 END_VAR
 
 VAR RETAIN

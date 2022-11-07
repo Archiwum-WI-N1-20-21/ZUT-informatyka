@@ -37,7 +37,7 @@
       </Mod>
       <Mod Name="sysconf" Img="files\BR.ico" Stat="Equal" Act="Ignore" Res="Warm">
       </Mod>
-      <Mod Name="iomap" Img="files\iom.ico" Stat="Equal" Act="Ignore">
+      <Mod Name="iomap" Img="files\iom.ico" Stat="Different" Act="Download">
       </Mod>
     </Cat>
   </AppMod>

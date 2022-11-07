@@ -22,4 +22,18 @@ TYPE
 		Schody : StairsStruct;
 	END_STRUCT;
 	
+	OperatorStruct : STRUCT
+		diStart : BOOL;
+		diStop : BOOL;
+		doAktywny : BOOL;
+		doAwaria : BOOL;
+		diReset : BOOL;
+	END_STRUCT;
+	
+	EngineStruct : STRUCT
+		diTermikNO : BOOL; (* Czujnik termiczny : TRUE - za wysoka temperatura, FALSE - temperatura OK => DI11 *)
+		diTermikNC : BOOL; (* Czujnik termiczny : FALSE - za wysoka temperatura, TRUE - temperatura OK => DI12 *)
+		doOnOff : BOOL; (* Wysterowanie silnika *)
+	END_STRUCT;
+	
 END_TYPE

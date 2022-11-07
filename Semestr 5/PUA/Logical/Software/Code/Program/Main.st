@@ -1,7 +1,7 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	uiLightControl := 6;
+	uiLightControl := 7;
 	//uiClockTON_PT[1] := 1;
 END_PROGRAM
 
@@ -59,6 +59,10 @@ PROGRAM _CYCLIC
 			ELSE
 				Home.Jadalnia.aoLamp[1] := 0;
 			END_IF
+		
+		7: // Procedura start stop
+			Opearator.doAktywny := (EDGEPOS(Opearator.diStart) OR Opearator.doAktywny) AND NOT (Opearator.diStop) AND NOT(Opearator.doAwaria); (* Start odpali sie tylko raz *)
+			Opearator.doAwaria := Engine.diTermikNO OR (Opearator.doAwaria AND NOT(Opearator.diReset));
 	END_CASE;
 END_PROGRAM
 
