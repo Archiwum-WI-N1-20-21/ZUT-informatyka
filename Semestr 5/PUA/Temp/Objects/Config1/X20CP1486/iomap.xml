@@ -178,18 +178,19 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput01" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput01" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Operator.diEStop" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput02" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput02" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Opearator.diStart" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Operator.diStart" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput03" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput03" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Opearator.diStop" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Operator.diStop" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput04" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput04" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Opearator.diReset" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Operator.diReset" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput05" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput05" Kind="io"/>
@@ -208,6 +209,7 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput10" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput10" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Tank.diTermik" Kind="pv" Inverted="1"/>
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput11" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput11" Kind="io"/>
@@ -272,17 +274,18 @@
 <Prod Device="IF6.ST2" DPName="FirmwareVersion" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput01" Type="BOOL">
-<Prod Device="TC#4-CPYDEV" DPName="Program:Opearator.doAktywny" Kind="pv"/>
+<Prod Device="TC#4-CPYDEV" DPName="Program:Operator.doAktywny" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput02" Type="BOOL">
-<Prod Device="TC#4-CPYDEV" DPName="Program:Opearator.doAwaria" Kind="pv"/>
+<Prod Device="TC#4-CPYDEV" DPName="Program:Operator.doAwaria" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput02" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput03" Type="BOOL">
 <Cons Device="IF6.ST2" DPName="DigitalOutput03" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput04" Type="BOOL">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Tank.doHeater" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput04" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput05" Type="BOOL">
@@ -412,7 +415,7 @@
 </LN>
 <LN ID="%IW.IF6.ST3.AnalogInput01" Type="INT">
 <Prod Device="IF6.ST3" DPName="AnalogInput01" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.aiDimmer[1]" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Operator.aiSetter" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST3.Channel01OK" Type="BOOL">
 <Prod Device="IF6.ST3" DPName="Channel01OK" Kind="io"/>
@@ -490,16 +493,19 @@
 <Prod Device="IF6.ST4" DPName="FirmwareVersion" Kind="io"/>
 </LN>
 <LN ID="%QW.IF6.ST4.AnalogOutput01" Type="INT">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Tank.aoHeater" Kind="pv"/>
 <Cons Device="IF6.ST4" DPName="AnalogOutput01" Kind="io"/>
 </LN>
 <LN ID="%QW.IF6.ST4.AnalogOutput02" Type="INT">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Tank.aoFan" Kind="pv"/>
 <Cons Device="IF6.ST4" DPName="AnalogOutput02" Kind="io"/>
 </LN>
 <LN ID="%QW.IF6.ST4.AnalogOutput03" Type="INT">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Tank.aoHeater" Kind="pv"/>
 <Cons Device="IF6.ST4" DPName="AnalogOutput03" Kind="io"/>
 </LN>
 <LN ID="%QW.IF6.ST4.AnalogOutput04" Type="INT">
-<Prod Device="TC#4-CPYDEV" DPName="Program:Home.Jadalnia.aoLamp[1]" Kind="pv"/>
+<Prod Device="TC#4-CPYDEV" DPName="Program:Tank.aoFan" Kind="pv"/>
 <Cons Device="IF6.ST4" DPName="AnalogOutput04" Kind="io"/>
 </LN>
 <LN ID="%IW.IF6.ST4.BusModuleId" Type="UINT">
@@ -630,6 +636,7 @@
 </LN>
 <LN ID="%IW.IF6.ST6.Temperature01" Type="INT">
 <Prod Device="IF6.ST6" DPName="Temperature01" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Tank.aiTemperature" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF6.ST6.Temperature04" Type="INT">
 <Prod Device="IF6.ST6" DPName="Temperature04" Kind="io"/>

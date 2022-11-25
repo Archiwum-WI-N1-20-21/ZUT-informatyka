@@ -3,6 +3,9 @@ PROGRAM _INIT
 	(* Insert code here *)
 	uiLightControl := 7;
 	//uiClockTON_PT[1] := 1;
+	Tank.uiHeaterSetValue := 15000;
+	Tank.ThermoMin.uiSetValue := 550;
+	Tank.ThermoMax.uiSetValue := 600;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -61,8 +64,71 @@ PROGRAM _CYCLIC
 			END_IF
 		
 		7: // Procedura start stop
-			Opearator.doAktywny := (EDGEPOS(Opearator.diStart) OR Opearator.doAktywny) AND NOT (Opearator.diStop) AND NOT(Opearator.doAwaria); (* Start odpali sie tylko raz *)
-			Opearator.doAwaria := Engine.diTermikNO OR (Opearator.doAwaria AND NOT(Opearator.diReset));
+			//Operator.doAktywny := (EDGEPOS(Operator.diStart) OR Operator.doAktywny) AND NOT (Operator.diStop) AND NOT(Operator.doAwaria); (* Start odpali sie tylko raz *)
+			//Operator.doAwaria := Engine.diTermikNC OR (Operator.doAwaria AND NOT(Operator.diReset));
+			
+			Operator.doAwaria := Engine.diTermikNC OR (Operator.doAwaria AND NOT(Operator.diReset));
+		
+			fRS[1].SET := EDGEPOS(Operator.diStart);
+			fRS[1].RESET1 := Operator.diStop OR Operator.doAwaria (* OR Operator.diEStop *);
+			fRS[1]();
+			Operator.doAktywny := fRS[1].Q1;
+		
+			fSR[1].SET1 := Tank.diTermik OR Operator.diEStop;
+			fSR[1].RESET := Operator.diReset;
+			fSR[1]();
+			Operator.doAwaria := fSR[1].Q1;
+		
+			// Obsluga termostatu
+			IF Tank.aiTemperature >= Tank.ThermoMax.uiSetValue THEN // Poziom temperatury wylaczania
+				Tank.ThermoMax.uiOutNC := FALSE;
+				Tank.ThermoMax.uiOutNO := TRUE;
+			ELSE
+				Tank.ThermoMax.uiOutNC := TRUE;
+				Tank.ThermoMax.uiOutNO := FALSE;
+			END_IF;
+		
+			IF Tank.aiTemperature >= Tank.ThermoMin.uiSetValue THEN // Poziom temperatury wlaczania
+				Tank.ThermoMin.uiOutNC := FALSE;
+				Tank.ThermoMin.uiOutNO := TRUE;
+			ELSE
+				Tank.ThermoMin.uiOutNC := TRUE;
+				Tank.ThermoMin.uiOutNO := FALSE;
+			END_IF;
+			
+			IF Tank.doHeater THEN // Obsluga grzalki
+				Tank.aoHeater := Tank.uiHeaterSetValue;
+			ELSE
+				Tank.aoHeater := 0;
+			END_IF;
+		
+			fRS[2].SET := Tank.ThermoMin.uiOutNC AND Operator.doAktywny;
+			fRS[2].RESET1 := NOT(Tank.ThermoMax.uiOutNC) OR Operator.diStop;
+			fRS[2]();
+			Tank.doHeater := fRS[2].Q1;
+			Tank.aoFan := Operator.aiSetter; // Obsluga wentylatora
+		
+			// Pomiar czasu pracy
+			ClockTON[2].IN := Tank.doHeater AND NOT(ClockTON[2].Q);
+			ClockTON[2].PT := T#1s;
+			ClockTON[2]();
+		
+			IF ClockTON[2].Q THEN
+	  			Statistic.uiWorkTime[1].uiSeconds := Statistic.uiWorkTime[1].uiSeconds + 1;
+			END_IF;
+			IF Statistic.uiWorkTime[1].uiSeconds >= 60 THEN
+				Statistic.uiWorkTime[1].uiSeconds := 0;
+				Statistic.uiWorkTime[1].uiMinues := Statistic.uiWorkTime[1].uiMinues + 1;
+			END_IF;
+			IF Statistic.uiWorkTime[1].uiMinues >= 60 THEN
+				Statistic.uiWorkTime[1].uiMinues := 0;
+				Statistic.uiWorkTime[1].uiHours := Statistic.uiWorkTime[1].uiHours + 1;
+			END_IF;
+			IF EDGEPOS(Operator.doAktywny) THEN
+				Statistic.uiWorkTime[1].uiSeconds := 0;
+				Statistic.uiWorkTime[1].uiMinues := 0;
+				Statistic.uiWorkTime[1].uiHours := 0;
+			END_IF;
 	END_CASE;
 END_PROGRAM
 

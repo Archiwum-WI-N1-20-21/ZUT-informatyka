@@ -4,11 +4,15 @@ VAR
 	ClockTON : ARRAY[1..10] OF TON; 
 	ClockTOF : ARRAY[1..10] OF TOF; 
 	Scale : ARRAY[1..10] OF LCRLimScal;
-	Opearator : OperatorStruct;
+	Operator : OperatorStruct;
 	Engine : EngineStruct;
+	fSR : ARRAY[1..10] OF SR;
+	fRS : ARRAY[1..10] OF RS;
+	Tank : TankStruct;
 END_VAR
 
 VAR RETAIN
 	uiClockTON_PT : ARRAY[1..10] OF REAL; (* Czas zadany w sekundach *)
 	uiClockTOF_PT : ARRAY[1..10] OF REAL; (* Czas zadany w sekundach *)
+	Statistic : StatisticsStruct;
 END_VAR
