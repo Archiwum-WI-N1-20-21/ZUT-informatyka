@@ -1,22 +1,22 @@
-Connection "/IF=tcpip /LOPO=11159 /SA=1", "/COMT=2500 /RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1"
+Connection "/IF=tcpip /LOPO=11159 /SA=80", "/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=31.193.99.172 /REPO=11159 /ANSL=1 /PT=11169"
 Diagnose
 DeleteMemory ROM
 Coldstart
 Download: ".\System\X20CP1486I31.BR", "ROM"
 Coldstart
-Download: ".\ashwd.br", "SYSROM"
 Download: ".\asfw.br", "SYSROM"
+Download: ".\ashwd.br", "SYSROM"
 Download: ".\arconfig.br", "SYSROM"
 Download: ".\sysconf.br", "SYSROM"
 Warmstart
+Download: ".\udbdef.br", "ROM"
+Download: ".\iomap.br", "ROM"
+Download: ".\ashwac.br", "ROM"
+Download: ".\standard.br", "ROM"
 Download: ".\runtime.br", "ROM"
 Download: ".\brsystem.br", "ROM"
 Download: ".\sys_lib.br", "ROM"
 Download: ".\astime.br", "ROM"
 Download: ".\asieccon.br", "ROM"
-Download: ".\standard.br", "ROM"
 Download: ".\LoopConR.br", "ROM"
-Download: ".\ashwac.br", "ROM"
-Download: ".\iomap.br", "ROM"
-Download: ".\udbdef.br", "ROM"
 Download: ".\Program.br", "ROM"

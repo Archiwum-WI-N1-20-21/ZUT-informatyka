@@ -1,7 +1,7 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	uiLightControl := 7;
+	uiLightControl := 8;
 	//uiClockTON_PT[1] := 1;
 	Tank.uiHeaterSetValue := 15000;
 	Tank.ThermoMin.uiSetValue := 550;
@@ -128,6 +128,55 @@ PROGRAM _CYCLIC
 				Statistic.uiWorkTime[1].uiSeconds := 0;
 				Statistic.uiWorkTime[1].uiMinues := 0;
 				Statistic.uiWorkTime[1].uiHours := 0;
+			END_IF;
+		
+		8: // obsluga suszarki do rak + pomiary czasu
+			ClockTOF[3].IN := Home.Lazienka.Dryer.diHand;
+			ClockTOF[3].PT := T#0.5s;
+			ClockTOF[3]();
+			ClockTON[3].IN := ClockTOF[3].Q;
+			ClockTON[3].PT := T#15s;
+			ClockTON[3]();
+			Home.Lazienka.Dryer.doDryer := NOT(ClockTON[3].Q) AND ClockTOF[3].Q;
+		
+			// Pomiar czasu pracy
+			ClockTON[2].IN := Home.Lazienka.Dryer.doDryer AND NOT(ClockTON[2].Q);
+			ClockTON[2].PT := T#1s;
+			ClockTON[2]();
+		
+			IF ClockTON[2].Q THEN
+				Statistic.uiWorkTime[3].uiSeconds := Statistic.uiWorkTime[3].uiSeconds + 1;
+			END_IF;
+			IF Statistic.uiWorkTime[3].uiSeconds >= 60 THEN
+				Statistic.uiWorkTime[3].uiSeconds := 0;
+				Statistic.uiWorkTime[3].uiMinues := Statistic.uiWorkTime[3].uiMinues + 1;
+			END_IF;
+			IF Statistic.uiWorkTime[3].uiMinues >= 60 THEN
+				Statistic.uiWorkTime[3].uiMinues := 0;
+				Statistic.uiWorkTime[3].uiHours := Statistic.uiWorkTime[3].uiHours + 1;
+			END_IF;
+			IF EDGEPOS(Operator.diReset) THEN
+				Statistic.uiWorkTime[3].uiSeconds := 0;
+				Statistic.uiWorkTime[3].uiMinues := 0;
+				Statistic.uiWorkTime[3].uiHours := 0;
+			END_IF;
+			
+			
+			IF EDGEPOS((TIME_TO_DINT(ClockTON[3].ET) MOD 1000) = 0) AND (TIME_TO_DINT(ClockTON[3].ET) > 0) THEN
+				Statistic.uiWorkTime[4].uiSeconds := Statistic.uiWorkTime[4].uiSeconds + 1;
+			END_IF;
+			IF Statistic.uiWorkTime[4].uiSeconds >= 60 THEN
+				Statistic.uiWorkTime[4].uiSeconds := 0;
+				Statistic.uiWorkTime[4].uiMinues := Statistic.uiWorkTime[4].uiMinues + 1;
+			END_IF;
+			IF Statistic.uiWorkTime[4].uiMinues >= 60 THEN
+				Statistic.uiWorkTime[4].uiMinues := 0;
+				Statistic.uiWorkTime[4].uiHours := Statistic.uiWorkTime[4].uiHours + 1;
+			END_IF;
+			IF EDGEPOS(Operator.diReset) THEN
+				Statistic.uiWorkTime[4].uiSeconds := 0;
+				Statistic.uiWorkTime[4].uiMinues := 0;
+				Statistic.uiWorkTime[4].uiHours := 0;
 			END_IF;
 	END_CASE;
 END_PROGRAM

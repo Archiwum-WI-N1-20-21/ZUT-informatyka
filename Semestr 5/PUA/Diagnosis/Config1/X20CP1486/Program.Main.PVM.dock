@@ -1,32 +1,36 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=2 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=6 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                                Statistic                         StatisticsStruct    0 "                                                               *"    0   24    1    0    1    1         
                               uiWorkTime                         TimeStruct[0..9]    0 "                                                               *"    1   24   10    0    0    1   a,1,10
-                           uiWorkTime[0]                               TimeStruct    0 "                                                               *"    2   24    1    0    0    1         
-                               uiSeconds                                    USINT    0 "                                                              39"    3    5    1   10    0    0         
-                                uiMinues                                    USINT    0 "                                                               1"    3    5    1   10    0    0         
+                           uiWorkTime[2]                               TimeStruct    0 "                                                               *"    2   24    1    0    0    1         
+                               uiSeconds                                    USINT    0 "                                                              12"    3    5    1   10    0    0         
+                                uiMinues                                    USINT    0 "                                                               0"    3    5    1   10    0    0         
                                  uiHours                                     DINT    0 "                                                               0"    3    4    1   10    0    0         
-                                    Tank                               TankStruct    0 "                                                               *"    0   24    1    0    1    1         
-                                doHeater                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
-                                diTermik                                     BOOL    1 "                                                           FALSE"    1    1    1    2    0    0         
-                           aiTemperature                                      INT    1 "                                                             619"    1    3    1   10    0    0         
-                                aoHeater                                      INT    5 "                                                               0"    1    3    1   10    0    0         
-                                   aoFan                                      INT    5 "                                                               3"    1    3    1   10    0    0         
-                        uiHeaterSetValue                                      INT    0 "                                                           15000"    1    3    1   10    0    0         
-                               ThermoMin                         SensorNONCStruct    0 "                                                               *"    1   24    1    0    0    1         
-                              uiSetValue                                      INT    0 "                                                             550"    2    3    1   10    0    0         
-                                 uiOutNC                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                 uiOutNO                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                               ThermoMax                         SensorNONCStruct    0 "                                                               *"    1   24    1    0    0    1         
-                              uiSetValue                                      INT    0 "                                                             600"    2    3    1   10    0    0         
-                                 uiOutNC                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                 uiOutNO                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                           uiWorkTime[3]                               TimeStruct    0 "                                                               *"    2   24    1    0    0    1         
+                               uiSeconds                                    USINT    0 "                                                              15"    3    5    1   10    0    0         
+                                uiMinues                                    USINT    0 "                                                               0"    3    5    1   10    0    0         
+                                 uiHours                                     DINT    0 "                                                               0"    3    4    1   10    0    0         
+                                    Tank                               TankStruct    0 "                                                               *"    0   24    1    0    1    0         
+                                doHeater                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                diTermik                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                           aiTemperature                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                                aoHeater                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                                   aoFan                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                        uiHeaterSetValue                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                               ThermoMin                         SensorNONCStruct    0 "                                                               *"    1   24    1    0    0    0         
+                              uiSetValue                                      INT    0 "                                                               *"    2    3    1   10    0    0         
+                                 uiOutNC                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 uiOutNO                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                               ThermoMax                         SensorNONCStruct    0 "                                                               *"    1   24    1    0    0    0         
+                              uiSetValue                                      INT    0 "                                                               *"    2    3    1   10    0    0         
+                                 uiOutNC                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 uiOutNO                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                 Operator                           OperatorStruct    0 "                                                               *"    0   24    1    0    1    1         
                                  diStart                                     BOOL    1 "                                                           FALSE"    1    1    1    2    0    0         
                                   diStop                                     BOOL    1 "                                                           FALSE"    1    1    1    2    0    0         
                                  diEStop                                     BOOL    1 "                                                           FALSE"    1    1    1    2    0    0         
-                               doAktywny                                     BOOL    3 "                                                            TRUE"    1    1    1    2    0    0         
+                               doAktywny                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
                                 doAwaria                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
                                  diReset                                     BOOL    1 "                                                           FALSE"    1    1    1    2    0    0         
                                 aiSetter                                      INT    1 "                                                               3"    1    3    1   10    0    0         

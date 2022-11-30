@@ -217,7 +217,7 @@
 </LN>
 <LN ID="%IX.IF6.ST1.DigitalInput12" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="DigitalInput12" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="Program:Engine.diTermikNC" Kind="pv"/>
+<Cons Device="TC#4-CPYDEV" DPName="Program:Home.Lazienka.Dryer.diHand" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF6.ST1.BusModuleId" Type="UINT">
 <Prod Device="IF6.ST1" DPName="BusModuleId" Kind="io"/>
@@ -306,6 +306,7 @@
 <Cons Device="IF6.ST2" DPName="DigitalOutput09" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput10" Type="BOOL">
+<Prod Device="TC#4-CPYDEV" DPName="Program:Home.Lazienka.Dryer.doDryer" Kind="pv"/>
 <Cons Device="IF6.ST2" DPName="DigitalOutput10" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST2.DigitalOutput11" Type="BOOL">

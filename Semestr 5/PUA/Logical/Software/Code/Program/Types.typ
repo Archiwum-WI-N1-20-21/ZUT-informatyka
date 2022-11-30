@@ -6,6 +6,7 @@ TYPE
 		diPhotoCom : ARRAY[1..2] OF BOOL; (* Fotokomorka *)
 		aiDimmer : ARRAY[1..2] OF INT; (* Obsluga sciemniacza *)
 		aoLamp : ARRAY[1..2] OF INT; (* Obsluga lampy sciemnianej *)
+		Dryer : DryerStruct;
 	END_STRUCT;
 	
 	StairsStruct : STRUCT
@@ -20,6 +21,7 @@ TYPE
 		Sypialnia : RoomStruct;
 		Korytarz : RoomStruct;
 		Schody : StairsStruct;
+		Lazienka : RoomStruct;
 	END_STRUCT;
 	
 	OperatorStruct : STRUCT
@@ -63,6 +65,12 @@ TYPE
 		uiSeconds : USINT;
 		uiMinues : USINT;
 		uiHours : DINT;
+	END_STRUCT;
+	
+	DryerStruct : STRUCT
+		diHand : BOOL; (* czujnik wykrywania rak - laser lub fotokomroka NO/NC *)
+		diTermik : BOOL; (* czujnik przeciazeniowy stycznika zalaczajacego grzalke i wentylator NO/NC *)
+		doDryer : BOOL; (* stycznik -> wentylator i grzalka *)
 	END_STRUCT;
 	
 END_TYPE

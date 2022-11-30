@@ -10,7 +10,7 @@ VAR_CONFIG
 	::Program:Operator.doAktywny AT %QX."X20DO9322".DigitalOutput01;
 	::Program:Operator.doAwaria AT %QX."X20DO9322".DigitalOutput02;
 	::Program:Engine.diTermikNO AT %IX."X20DI9371".DigitalInput11;
-	::Program:Engine.diTermikNC AT %IX."X20DI9371".DigitalInput12;
+	::Program:Home.Lazienka.Dryer.diHand AT %IX."X20DI9371".DigitalInput12;
 	::Program:Operator.diEStop AT %IX."X20DI9371".DigitalInput01;
 	::Program:Tank.aiTemperature AT %IW."X20AT4222".Temperature01;
 	::Program:Tank.aoHeater AT %QW."X20AO4632".AnalogOutput03;
@@ -18,4 +18,5 @@ VAR_CONFIG
 	::Program:Tank.doHeater AT %QX."X20DO9322".DigitalOutput04;
 	::Program:Tank.aoFan AT %QW."X20AO4632".AnalogOutput02;
 	::Program:Tank.diTermik AT %IX."X20DI9371".DigitalInput10 INVERSE;
+	::Program:Home.Lazienka.Dryer.doDryer AT %QX."X20DO9322".DigitalOutput10;
 END_VAR
