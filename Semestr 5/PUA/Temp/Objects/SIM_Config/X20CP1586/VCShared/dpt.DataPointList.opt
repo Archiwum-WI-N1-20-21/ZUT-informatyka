@@ -1,9 +1,0 @@
-<BuildOptions>
-  <BuildOption>
-    <SourceFile Value="C:/projects/PUA_Lab1_Baranek/Physical/SIM_Config/X20CP1586/Cpu.sw" />
-    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
-    <Xml>
-      <Task Name="Program" Source="Software.Code.Program.prg" />
-    </Xml>
-  </BuildOption>
-</BuildOptions>
