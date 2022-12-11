@@ -103,4 +103,18 @@ TYPE
 		uiSetTime : ARRAY[1..10] OF REAL;
 		uiSetTemperature : ARRAY[1..10] OF REAL;
 	END_STRUCT;
+	
+	cOnOffStruct : STRUCT
+		inPV : REAL;
+		outCV : REAL;
+		error : REAL;
+	END_STRUCT;
+
+	cOnOffParStruct : STRUCT
+		E_min : REAL;
+		E_max : REAL;
+		CV_max : REAL;
+		CV_min : REAL;
+	END_STRUCT;
+	
 END_TYPE

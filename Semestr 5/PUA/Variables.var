@@ -11,8 +11,10 @@ VAR
 	Tank : TankStruct;
 	i : USINT;
 	uiCycleTime : USINT;
+	StepNumber : USINT;
 	HeatingSystem : HeatingSystemStruct;
 	StateMachine : StateMachineEnum;
+	cOnOff : cOnOffStruct;
 END_VAR
 
 VAR RETAIN
@@ -20,4 +22,5 @@ VAR RETAIN
 	uiClockTOF_PT : ARRAY[1..10] OF REAL; (* Czas zadany w sekundach *)
 	Statistic : StatisticsStruct;
 	HeatingSystemPar : HeatingSystemParStruct;
+	cOnOffPar : cOnOffParStruct;
 END_VAR

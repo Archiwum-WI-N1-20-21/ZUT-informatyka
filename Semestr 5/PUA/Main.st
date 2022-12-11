@@ -8,6 +8,9 @@ PROGRAM _INIT
 	Tank.ThermoMax.uiSetValue := 600;
 	uiCycleTime := 10;
 	StateMachine := INIT;
+	
+	HeatingSystemPar.uiSetTime[1] := 120;
+	HeatingSystemPar.uiSetTime[2] := 15;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -203,42 +206,98 @@ PROGRAM _CYCLIC
 				Statistic.uiWorkTime[5].uiHours := 0;
 			END_IF;
 		
-		9: // synteza maszyny stanow
-			fRS[1].SET := HeatingSystem.Operator.diStart;
-			fRS[1].RESET1 := HeatingSystem.Operator.diStop;
-			fRS[1]();
-			HeatingSystem.Operator.doAktywny := fRS[1].Q1;
+		9: // synteza maszyny stanow dla piecyka
+			CASE StepNumber OF
+				2..4:
+					IF cOnOff.error >= cOnOffPar.E_max THEN
+						cOnOff.outCV := cOnOffPar.CV_max; // grzej
+					END_IF
+					IF cOnOff.error <= cOnOffPar.E_min THEN
+						cOnOff.outCV := cOnOffPar.CV_min; // nie grzej
+					END_IF
+					
+				1,5..7:
+					cOnOff.outCV := 0;
+			END_CASE;
+			
+			HeatingSystem.Furnace.uiTemperature := INT_TO_REAL(HeatingSystem.Furnace.aiTemperature);
+			cOnOff.error := HeatingSystemPar.uiSetTemperature[1] - HeatingSystem.Furnace.aiTemperature;
+
+			HeatingSystem.Furnace.aoHeater := REAL_TO_INT(cOnOff.outCV);
+			HeatingSystem.Furnace.aoFan := HeatingSystem.Operator.aiSetter;
 			
 			CASE StateMachine OF
 				INIT:
+					StepNumber := 1;
+					fRS[1].SET := HeatingSystem.Operator.diStart;
+					fRS[1].RESET1 := HeatingSystem.Operator.diStop;
+					fRS[1]();
+					HeatingSystem.Operator.doAktywny := fRS[1].Q1;
+					
 					IF HeatingSystem.Operator.doAktywny THEN
+						HeatingSystemPar.uiSetTemperature[1] := 500;
 						StateMachine := HEAT_UP;
 					END_IF
 					
 				HEAT_UP:
+					StepNumber := 2;
 					IF EDGEPOS(HeatingSystem.Operator.diStop) THEN
 						StateMachine := STOP_TEMP;
+					END_IF
+					IF HeatingSystem.Furnace.uiTemperature >= HeatingSystemPar.uiSetTemperature[1] THEN
+						StateMachine := TEMP_CONST;
 					END_IF
 				
 				TEMP_CONST:
+					StepNumber := 3;
+					ClockTON[5].IN := TRUE;
+					ClockTON[5].PT := REAL_TO_TIME(HeatingSystemPar.uiSetTime[1] * 1000);
+					ClockTON[5]();
 					IF EDGEPOS(HeatingSystem.Operator.diStop) THEN
 						StateMachine := STOP_TEMP;
+					END_IF
+					IF ClockTON[5].Q THEN
+						ClockTON[5].IN := FALSE;
+						ClockTON[5]();
+						HeatingSystemPar.uiSetTemperature[1] := 400;
+						StateMachine := HEAT_DOWN;
 					END_IF
 				
 				HEAT_DOWN:
+					StepNumber := 4;
 					IF EDGEPOS(HeatingSystem.Operator.diStop) THEN
 						StateMachine := STOP_TEMP;
 					END_IF
+					IF HeatingSystem.Furnace.uiTemperature <= HeatingSystemPar.uiSetTemperature[1] THEN
+						StateMachine := WAIT_STOP;
+					END_IF
 				
 				WAIT_STOP:
+					StepNumber := 5;
+					ClockTON[5].IN := TRUE;
+					ClockTON[5].PT := REAL_TO_TIME(HeatingSystemPar.uiSetTime[2] * 1000);
+					ClockTON[5]();
+					IF ClockTON[5].Q THEN
+						ClockTON[5].IN := FALSE;
+						ClockTON[5]();
+						//HeatingSystem.Operator.doAktywny := FALSE;
+						StateMachine := INIT;
+					END_IF
 					IF EDGEPOS(HeatingSystem.Operator.diStop) THEN
 						StateMachine := STOP_TEMP;
 					END_IF
 				
 				FAILURE:
+					StepNumber := 6;
+					IF EDGEPOS(HeatingSystem.Operator.diStop) THEN
+						HeatingSystem.Operator.doAktywny := FALSE; // dezaktywacja systemu
+						StateMachine := INIT;
+					END_IF
 				
 				STOP_TEMP:
+					StepNumber := 7;
 					IF EDGEPOS(HeatingSystem.Operator.diStop) THEN
+						HeatingSystem.Operator.doAktywny := FALSE; // dezaktywacja systemu
 						StateMachine := INIT;
 					END_IF
 			END_CASE;
