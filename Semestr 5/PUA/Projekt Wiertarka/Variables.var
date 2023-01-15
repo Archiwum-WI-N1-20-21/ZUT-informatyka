@@ -1,0 +1,25 @@
+VAR
+	(* Structures *)
+	StateMachine : StateMachineEnum;
+	FailureReason : FailureEnum;
+	Operator : OperatorStruct;	
+	Lights : LightsStruct;
+	Drill : DrillStruct;
+	Feed : FeedStruct;
+
+	(* Alarms *)
+	Alarms : AlarmsStruct;
+	gAlarm : BOOL;
+	i : UINT;
+		
+	(* Timers *)
+	ActivateSystemTON : TON; (* Checks start button for start input *)
+	PauseDrillTON : TON; (* Checks stop button for pause input *)
+	StopDrillTON : TON; (* Checks stop button for stop input *)
+	CheckDrillEngineTON : TON; (* Checks if drill engine turns on *)
+	LiftingFeedTON : TON; (* Checks if feed lifts *)
+	LoweringFeedTON : TON; (* Checks if feeds lowers *)
+	BlinkLedOnTON : TON; (* Timers to blink LEDs *)
+	BlinkLedOffTON : TON;
+	PauseHelperFlag : BOOL;
+END_VAR
