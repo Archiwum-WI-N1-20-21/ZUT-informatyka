@@ -1,0 +1,4 @@
+"./Core/Src/main.o"
+"./Core/Src/syscalls.o"
+"./Core/Src/sysmem.o"
+"./Core/Startup/startup_stm32f407vgtx.o"
