@@ -1,0 +1,61 @@
+SI - przeszukiwanie
+1. Co to jest i co znajduje się w zbiorze Open?
+2. Na tablicy dany jest graf. W jakiej kolejności odwiedzi węzły algorytm wszerz?
+3. Kiedy kończy się działanie algorytmu Dijkstry?
+4. Czy funkcja heurystyczna może zwrócić dla tego samego stanu dwie różne wartości? Uzasadnij krótko
+5. Co to jest heurystyka monotoniczna?
+6. Jako jaką strukturę danych implementuje się kolejkę Open dla algorytmu Best First Search a jaką dla A*?
+7. Co to jest i co znajduje się w zbiorze Closed?
+8. Na tablicy dany jest graf. W jakiej kolejności odwiedzi węzły algorytm w głąb?
+9. Co jest argumentem funkcji heurystycznej i co zwraca?
+
+SI - sprawdzian z gier
+1. Dlaczego nie zawsze można podać wartość wypłaty dokładnej w drzewie gry?
+2. Co oznacza zmienna beta w algorytmie alpha-beta i jaka jest wartość początkowo tej zmiennej?
+3. Jakie wartości początkowe przyjmuje zmienna określająca wartość węzła w drzewie gry ‚v‘ w procedurach algorytmu min-max?
+4. Co to jest funkcja oceny pozycji i po co się ją stosuje?
+5. Jaki warunek musi zostać spełniony, by przerwać przeszukiwanie gałęzi w algorytmie alpha-beta (przycięcie)?
+6. Jaki warunek sprawdza na początku procedura max/MMEVALUATEMAXSTATE  w algorytmie min-max?
+7. Co znajduje sie w węzłach a co na krawędziach w drzewie gry
+8. Dlaczego w węzłach stosuje się ocenę heurystyczną pozycji
+9. Kiedy następuje zmiana wartości węzła "v" w procedurach algorytmu mini-max?
+
+SI - sprawdzian z algorytmu genetycznego
+1. Czy osobnik po selekcji może pojawić się w populacji kilka razy? Czy może zniknąć z puli nowych osobników?
+2. Dany jest osobnik kodowany homogenicznie O1=[2 1 5 3 4]. Zaprezentuj proces mutacji przez inwersję
+3. Co jest wynikiem działania algorytmu ewolucyjnego (co zwraca)?
+4. Co to jest efekt horyzontu?
+5. Co oznacza zmienna beta w algorytmie alpha-beta i jaka jest wartość początkowo tej zmiennej?
+6. Jakie wartości początkowe przyjmuje zmienna określająca wartość węzła w drzewie gry ‚v‘ w procedurach algorytmu min-max?
+7. Wg jakiego kryterium (jakiej cechy osobnika) dobiera się osobniki w procedurze selekcji?
+8. Dane są osobniki kodowane binarnie O1=[0 1 1 0 1 0 1] i O2=[1 1 0 1 0 0 0]. Zaprezentuj działanie krzyżowania jednopunktowego
+9. Kiedy kończy się algorytm ewolucyjny?
+10. Wymień metody selekcji
+11. Dany jest osobnik kodowany binarnie O1=[0 1 1 0 1 0 1]. Zaprezentuj proces mutacji jednopunktowej
+12. Jakie kroki obejmuje cykl algorytmu ewolucyjnego (podać w odpowiedniej kolejności)?
+
+SI - sprawdzian z naiwnego klasyfikatora Bayesa
+1. Dokładność/Accuracy - Co to jest, jak się liczy, jakie przyjmuje wartości i po co się stosuje ?
+2. Na czym polega uczenia naiwnego klasyfikatora Bayesa w wariancie dyskretnym?
+3. Jeżeli mamy zbiór danych z 4 klasami: A, B, C, D. Jaka może być odpowiedź/predykcja nauczonego modelu klasyfikatora Bayesa?
+4. Jak należy interpretować wynik 100% dokładności na zbiorze uczącym?
+5. Na czym polega uczenie naiwnego klasyfikatora Bayesa w wariancie ciągłym?
+6. Na jakiej podstawie określa się klasę wyjściową - decyzję w klasyfikatorze Bayesa?
+7. Po co stosuje się poprawkę laPlace i co ona zmienia?
+8. Na czym polega predykcja w naiwnym klasyfikatorze Bayesa w wariancie dyskretnym?
+9. Co to jest zbiór uczący i testujący i po co się je stosuje?
+
+SI - sprawdzian z perceptronu
+1. Jaka będzie nowa wartość dla wagi o wartości 0,5 korygowanej regułą delta ze współczynnikiem uczenia = 0,5 wejściu = 2 i oczekiwanym wyjściu = -1? Pokazać wykonane obliczenia
+2. Napisz wzór na obliczenie wyjścia z perceptronu prostego z jednym wejściem (gdy w zbiorze uczącym jest jedna cecha).
+3. Co to jest, jaką ma funkcję i jakie wartości przyjmuje współczynnik uczenia?
+4. Jaki jest sens geometryczny klasyfikacji za pomocą perceptronu
+5. Jeżeli dane są wejścia x1=-2 i x2 =2 a wagi w sieci perceptron to w0=-1, w1=2 i w2=1, funkcja aktywacji to funkcja zwracająca 1 jeżeli pobudzenie neuronu jest dodatnie lub -1 w przeciwnym wypadku. Oblicz jakie jest wyjście z neuronu - pokaż obliczenia.
+6. Jak należy zainicjować wagi w algorytmie uczenia regułą perceptronu (delta)?
+
+SI - sprawdzian z MLP
+1. Na czym polega uczenie off-line?
+2. Co to jest funkcja straty/kosztu? W jakim celu się jej używa?
+3. Jaka powinna być liczba neuronów w warstwach ukrytych? Czy może być ich za mało lub za dużo? Jakie byłyby tego konsekwencje?
+4. Od czego zależy liczba neuronów w warstwie wejściowej w sieci neuronowej?
+5. Jakie funkcje aktywacji używa się w różnych warstwach sieci neuronowej?
