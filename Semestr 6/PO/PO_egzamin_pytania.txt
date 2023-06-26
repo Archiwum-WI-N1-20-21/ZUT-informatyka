@@ -1,0 +1,11 @@
+Grupa 1:
+Inspekcja i przegląd oprogramowania
+Refaktoryzacja
+Prototypowanie
+Wzorce projektowe (strategia i dekorator)
+
+Grupa 2:
+Asercje
+Archimate - warstwy i symbole
+Wireframe
+Wzorce projektowe (obserwator)

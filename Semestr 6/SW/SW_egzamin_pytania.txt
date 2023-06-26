@@ -1,0 +1,19 @@
+40 pytań zamkniętych, 45s na pytanie
+
+Z pamięci:
+- Co to MQTT
+- Co to JTAG
+- Kluczowy eement protokolu MQTT
+- FreeRTOS vs CMSIS
+- Ktora magistrala potrzebna do wlaczenia GPIO
+- Ktora magistrala nizej w architekturze
+- Narzedzie do budowania obrazu rozruchowego Embedded linux
+- Jakiej sieci bys uzyl (MOST, LIN, CAN)
+- Charakterystyka SysTick
+- System czasu rzeczywistego w embedded linux
+- Co zawiera toolchain
+- Idle task hook
+- Zakleszczenia
+- Kiedy przenosi do stanu blocked
+- Ile rodzajow domyslnych stert w freertos
+- Ktora funkcja mozna zastapic ODR
