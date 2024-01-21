@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.10.94 SP"?>
+<TrendData xmlns="http://br-automation.co.at/AS/VC/Project" Name="TrendData_2">
+  <Property Name="CommandRequestDatapoint" Value="None"/>
+  <Property Name="CommandResponseDatapoint" Value="None"/>
+  <Property Name="CommandStatusDatapoint" Value="None"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="EnableDatapoint" Value="None"/>
+  <Property Name="ForeColor" Value="0"/>
+  <Property Name="Index" Value="1"/>
+  <Property Name="RecordMode" Value="Continuous"/>
+  <Property Name="SampleCount" Value="1200"/>
+  <Property Name="SampleRate" Value="50"/>
+  <Property Name="TrendDataType" Value="Online"/>
+  <Property Name="TrendMaxDatapoint" Value="None"/>
+  <Property Name="TrendMaxValue" Value="51000"/>
+  <Property Name="TrendMinDatapoint" Value="None"/>
+  <Property Name="TrendMinValue" Value="-51000"/>
+  <Property Name="TrendSampleCountDatapoint" Value="None"/>
+  <Property Name="TrendSampleDateTimeDatapoint" Value="None"/>
+  <Property Name="TrendSimulationValue" Value="Random"/>
+  <Property Name="TrendValueDatapoint" Value="Source[global].Variable[DataSource.Software.Code.DriveDC.fSpeed[0].Out]"/>
+  <Property Name="TriggerDatapoint" Value="None"/>
+</TrendData>

@@ -1,0 +1,18 @@
+VAR
+	Controller : ControlTyp;
+	Motor : MotorStruct;
+	Operator : OperatorStruct;
+	
+	fRS : ARRAY[0..9] OF RS;
+	fSR : ARRAY[0..9] OF SR;
+	
+	fScale : ARRAY[0..9] OF LCRLimScal;
+	fSpeed : ARRAY[0..9] OF MTBasicsDT1;
+	fStatistics : ARRAY[0..9] OF MTDataStatistics;
+	fPID : ARRAY[0..9] OF MTBasicsPID;
+END_VAR
+
+VAR RETAIN
+	SystemPars : SystemParTyp;
+	fPidPars : ARRAY[0..9] OF fPidParTyp;
+END_VAR
