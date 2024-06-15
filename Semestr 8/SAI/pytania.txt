@@ -1,0 +1,20 @@
+1. Wyjaśnić pojęcie ARPANET
+ARPANET (ang. Advanced Research Projects Agency Network) – pierwsza sieć rozległa oparta na rozproszonej architekturze i protokole TCP/IP. Jest bezpośrednim przodkiem Internetu. Został wyłączony w 1990 roku.
+
+2. Na czym polega różnica pomiędzy wolnym oprogramowaniem a otwartym oprogramowaniem
+Free software kładzie główny nacisk na strony moralne i etyczne dostępności oprogramowania
+Open source podkreśla znacznie technicznej doskonałości kodu.
+
+3. Podać definicję społeczeństwa informacyjnego
+Terminem tym określa się społeczeństwo, w którym towarem staje się informacja traktowana jako szczególne dobro niematerialne, równoważne lub cenniejsze nawet od dóbr materialnych.
+
+4. Wymienić i opisać modele uniwersytetu
+Model Kanta - państwo interweniuje jedynie w niektórych aspektach działalności uczelni
+Model Humboldta (czytać dosłownie humbolt, bo to niemiec) - państwo odgrywa rolę drugoplanową i nie integruje w wewnętrzne sprawy uniwersytetu
+Model Napoleona - państwo zachowuje pełną kontrolę nad działalnością uniwersytetu
+Model brytyjski - państwo nie jest właścicielem uniwersytetu, wspiera je jedynie w ich działalności
+
+5. Wymienić trzy fale Tofflera
+Pierwsza fala - agrarna - związana była z pojawieniem się około 10 000 lat temu wynalazków i umiejętności związanych z rolnictwem i upowszechnianiem osiadłego trybu życia
+Druga fala - przemysłowa - związana z wynalezieniem druku; wzbierająca około 300 lat temu przyniosła nowe techniki komunikacyjne oraz powstanie systemu wymiany dóbr i usług.
+Trzecia fala - doświadczana obecnie, związana z powstaniem nowych technologii, zwrot ku prosumpcji
